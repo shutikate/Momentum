@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momentum</title>
+  <link rel="icon" href="./assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="./assets/css/owfont-regular.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="not-found"></div>
+  <div class="wrapper">
+    <header class="header">
+      <div class="player widget">
+        <div class="wrapper-description">
+          <div class="player__song-name"></div>
+          <div class="player__duration">
+            <div class="player__progress">
+              <div class="progress-scale"></div>
+            </div>
+            <div class="player__time">
+              <div class="time-current"></div>
+              <div class="time-divider">/</div>
+              <div class="time-length"></div>
+            </div>
+          </div>
+          <ul class="player__songs"></ul>
+        </div>
+        <div class="wrapper-actions">
+          <div class="player__buttons">
+            <button class="button_previous player_icon"></button>
+            <button class="button_play player_icon"></button>
+            <button class="button_next player_icon"></button>
+          </div>
+          <div class="player__volume">
+            <div class="volume-button"></div>
+            <input type="range" id="volume" class="volume-progress" min="0" max="100" value="50" step="1"></input>
+          </div>
+        </div>
+      </div>
+      <div class="weather widget">
+        <input type="text" class="weather__city">
+        <div class="weather__icon"></div>
+        <div class="weather__forecast">
+          <span class="weather_temperature"></span>
+          <span class="weather_description"></span>
+        </div>
+        <div class="weather__wind"></div>
+        <div class="weather__humidity"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider">
+        <button class="slider__prev slider_icon"></button>
+        <button class="slider__next slider_icon"></button>
+      </div>
+      <time class="time widget"></time>
+      <div class="date widget"></div>
+      <div class="greeting widget">
+        <p class="greeting__text"></p>
+        <input type="text" class="greeting__name">
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="settings">
+        <div class="settings__icon"></div>
+        <div class="settings__form">
+          <div class="settings__language">
+            <p class="language-name"></p>
+            <div class="language-buttons">
+              <div class="language">
+                <input type="radio" id="english" name="language" value="english" checked>
+                <label class="english" for="english"></label>
+              </div>
+              <div class="language">
+                <input type="radio" id="russian" name="language" value="russian">
+                <label class="russian" for="russian"></label>
+              </div>
+            </div>
+          </div>
+          <div class="settings__background">
+            <p class="source-name"></p>
+            <div class="source-buttons">
+              <div class="source">
+                <input type="radio" id="github" name="background" value="github" checked>
+                <label for="github-back" class="github">GitHub</label>
+              </div>
+              <div class="source">
+                <input type="radio" id="unsplash" name="background" value="unsplash">
+                <label for="cunsplash-back" class="unsplash">API Unsplash</label>
+                <input type="text" disabled class="tag-unsplash">
+              </div>
+              <div class="source">
+                <input type="radio" id="flickr" name="background" value="flickr">
+                <label for="flickr-back" class="flickr">API Flickr</label>
+                <input type="text" disabled class="tag-flickr">
+              </div>
+            </div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-audio"></p>
+            <div class="widget-btn" id="player"></div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-weather"></p>
+            <div class="widget-btn" id="weather"></div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-time"></p>
+            <div class="widget-btn" id="time"></div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-date"></p>
+            <div class="widget-btn" id="date"></div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-greeting"></p>
+            <div class="widget-btn" id="greeting"></div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-quotes"></p>
+            <div class="widget-btn" id="quotes"></div>
+          </div>
+          <div class="settings__widgets">
+            <p class="widget-name widget-todo"></p>
+            <div class="widget-btn" id="toDo"></div>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://rs.school/js-stage0/" class="social__rs" ></a>
+          <a href="https://github.com/shutikate" class="social__github"></a>
+          &copy; 2022
+        </div>
+        <div class="todo__icon-adaptive"></div>
+      </div>
+      <div class="quotes widget">
+        <button class="quote-update"></button>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <div class="toDo widget">
+        <div class="todo__form">
+          <button class="todo-add fa fa-plus"></button>
+          <div class="todo__active-area"></div>
+          <div class="todo__done-area"></div>
+        </div>
+        <div class="todo__icon"></div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+import './src/settings';
+import './src/clock-calendar';
+import './src/greeting';
+import './src/slider';
+import './src/weather';
+import './src/quotes';
+import './src/audio';
+import './src/todo-list';
+import './src/score';
